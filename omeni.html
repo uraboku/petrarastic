@@ -1,0 +1,112 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Projekt</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--Load YouTube "iframe_api" asynchronously-->
+    <script async src="https://www.youtube.com/iframe_api"></script>
+
+</head>
+<body>
+
+<header>
+
+	<div class="nav">
+
+		<div class="lang-menu">
+		</div>
+
+<div class="main-menu">
+			<nav>
+				<ul>
+					<li><a href="index.html">Naslovna</a></li>
+					<li><a href="vjezbe.html">Vježbe</a></li>
+					<li><a href="video.html">Video</a></li>
+				</ul>
+			</nav>
+		</div>
+ 
+ <div class="main-wrapper">
+
+ 	<div class="main-text"></div>
+
+ 		<h1>Petra Rastić</h1>
+
+ 		<h2>Digitalni multimedij 1</h2>
+
+ 		<p>Zovem se Petra Rastić, imam 20 godina <br> i rodila sam se u Zagrebu. <br> Od malena sam vrlo živahno dijete sa puno <br>interesa, što se prebacilo u odraslije godine. <br>U slobodno vrijeme obožavam čitati knjige, <br>stripove, slikati, crtati, igrati igrice, slušati <br>raznovrsnu muziku, gledati crtiće i filmove <br>te mnoge druge stvari. </p>
+
+
+</header>
+
+
+<center><div class="row1"> 
+  <div class="column1">
+    <img src="images/muzika.jpg" style="width:100%">
+    <img src="images/manga.jpg" style="width:100%">
+  </div>
+  <div class="column1">
+    <img src="images/film.jpg" style="width:100%">
+    <img src="images/knjige.jpg" style="width:100%">
+  </div>  
+</div></center>
+
+
+<div class="content-wrapper">
+	<div id="div_YouTube"></div>
+	</div>
+
+
+<center><table id="zanimanja">
+  <tr>
+    <th>Neki interesi</th>
+  </tr>
+  <tr>
+    <td><a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/VisualKei">Visual Kei</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://professorlatinx.la.utexas.edu/comics/seinen-manga/">Seinen</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://en.wikipedia.org/wiki/Archive_of_Our_Own">Fanfiction</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://omori.fandom.com/wiki/OMORI_(GAME)">Omori</a></td>>
+  </tr>
+</table></center>
+
+<br><br><br> 
+
+<script>
+    function onYouTubeIframeAPIReady() {
+        var player;
+
+        player = new YT.Player('div_YouTube', {
+            videoId: 'DTIWXF1yO5Y',     // THE VIDEO ID.
+            width: 560,
+            height: 316,
+            playerVars: {
+                'autoplay': 1,
+                'controls': 1,
+                'showinfo': 0,
+                'modestbranding': 0,
+                'loop': 1,
+                'fs': 0,
+                'cc_load_policty': 0,
+                'iv_load_policy': 3
+            },
+            events: {
+                'onReady': function (e) {
+                    e.target.mute();
+                    e.target.setVolume(50);      // YOU CAN SET VALUE TO 100 FOR MAX VOLUME.
+                }
+            }
+        });
+    }
+</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700|Roboto:400,700&display=swap&subset=latin-ext');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Bitter', serif;
+}
+
+h3{
+	color: black;
+}
+
+.row p{
+	color: black;
+}
+
+header{
+	background-image: url("../images/main.jpg");
+	height: 700px;
+	width: 100%;
+	background-repeat: none;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+
+}
+
+.nav-wrapper{
+	width: 100%;
+	max-width: 1100px;
+
+	justify-content: space-between;
+}
+
+.nav a{
+	color: white;
+	font-family: Bitter;
+	text-decoration: none;
+}
+
+.nav ul li{
+	display: inline-block;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.lang-menu{
+	margin-bottom: 40px; 
+	color: white;
+}
+
+.main-menu{
+	margin-left: 50px;
+}
+
+
+h1{
+	font-family: Bitter;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 48px;
+	color: white;
+	position: absolute;
+	width: 458px;
+	height: 55.64px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+p{
+	font-family: Roboto;
+ 	font-style: normal;
+ 	font-size: 18px;
+ 	line-height: 24px;
+ 	color: white;
+ 	position: absolute;
+}
+
+.main-wrapper p{
+width: 684px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+color: white;
+margin-left: 50px;
+margin-top: 100px;
+}
+
+.main-wrapper h2{
+width: 160px;
+height: 25.13px;
+
+font-family: Bitter;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+color: white;
+
+text-align: center;
+margin-left: 50px;
+margin-top: 110px;
+}
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.row1 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 13px;
+  margin-top: 5%;
+}
+
+.column img {
+  margin-top: 30px;
+  vertical-align: middle;
+  width: 100%;
+  margin-left: 55%;
+}
+
+.column1 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 13px;
+  margin-top: 5%;
+}
+
+.column1 img {
+  margin-top: 30px;
+  vertical-align: middle;
+  width: 100%;
+  margin-left: 95%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.content-wrapper{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1100px;
+	padding: 30px 20px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5%;
+	margin-left: 30%;
+}
+
+#zanimanja {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 30%;
+}
+
+#zanimanja td, #zanimanja th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#zanimanja tr:nth-child(even){background-color: #f2f2f2;}
+
+#zanimanja tr:hover {background-color: #ddd;}
+
+#zanimanja th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+#zanimanja tr {
+	text-align: center;
+}
+
+.text {
+  background-color: lightgrey;
+  width: 600px;
+  padding: 50px;
+  margin: 20px;
+}
